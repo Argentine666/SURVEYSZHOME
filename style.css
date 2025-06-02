@@ -1,10 +1,10 @@
 /* Base Theme Colors */
 :root {
-  --primary-color: #002147; /* Navy Blue */
-  --primary-light: #00509E; /* Lighter Blue */
+  --primary-color: #002147;
+  --primary-light: #00509E;
   --primary-dark: #000C2D;
-  --accent-color: #4DA8DA; /* Soft Blue Accent */
-  --background-color: #E6F0FA; /* Blue-ish Background */
+  --accent-color: #4DA8DA;
+  --background-color: #E6F0FA;
   --card-background: #ffffff;
   --text-color: #1C1C1C;
   --link-color: #0056D2;
@@ -14,7 +14,6 @@
   --button-text: #FFFFFF;
 }
 
-/* Reset & Typography */
 body {
   margin: 0;
   padding: 0;
@@ -24,7 +23,6 @@ body {
   line-height: 1.6;
 }
 
-/* Header */
 header {
   background: linear-gradient(90deg, var(--primary-color), var(--primary-light));
   color: var(--button-text);
@@ -38,7 +36,6 @@ header h1 {
   font-size: 2.2em;
 }
 
-/* Navigation */
 nav {
   margin-top: 10px;
 }
@@ -55,14 +52,12 @@ nav a:hover {
   color: var(--accent-color);
 }
 
-/* Main Content */
 main {
   padding: 40px 20px;
   max-width: 1000px;
   margin: auto;
 }
 
-/* Cards & Sections */
 .section {
   background: var(--card-background);
   border-radius: 12px;
@@ -71,7 +66,6 @@ main {
   margin-bottom: 30px;
 }
 
-/* Buttons */
 button, .btn, input[type="submit"] {
   background-color: var(--button-bg);
   color: var(--button-text);
@@ -88,7 +82,6 @@ button:hover, .btn:hover, input[type="submit"]:hover {
   background-color: var(--button-hover-bg);
 }
 
-/* Links */
 a {
   color: var(--link-color);
   text-decoration: none;
@@ -99,7 +92,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Forms */
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -114,7 +106,6 @@ select {
   font-size: 15px;
 }
 
-/* Footer */
 footer {
   background-color: var(--primary-dark);
   color: var(--button-text);
@@ -124,20 +115,21 @@ footer {
   margin-top: 40px;
 }
 
-/* Utilities */
-.text-center {
+.button-box {
+  background-color: #00162E;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
   text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.mt-20 {
-  margin-top: 20px;
+.button-box button,
+.button-box .btn,
+.button-box input[type="submit"] {
+  margin: 10px;
 }
 
-.mt-40 {
-  margin-top: 40px;
-}
-
-/* Responsive */
 @media (max-width: 768px) {
   nav a {
     display: block;
@@ -151,22 +143,4 @@ footer {
   .section {
     padding: 20px;
   }
-}
-
-
-/* Button Container Box */
-.button-box {
-  background-color: #00162E; /* Dark navy-blue background */
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px 0;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Centered buttons inside the box */
-.button-box button,
-.button-box .btn,
-.button-box input[type="submit"] {
-  margin: 10px;
 }
